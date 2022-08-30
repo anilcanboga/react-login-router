@@ -1,0 +1,7 @@
+"/" -> Login Page
+
+I am sending "email" and "password" parameters as request to Api.
+
+"token" information comes as response data, I save it localstorage.
+
+If the information is correct, the page redirects to the "/home" endpoint.
