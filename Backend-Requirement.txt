@@ -5,3 +5,24 @@ I am sending "email" and "password" parameters as request to Api.
 "token" information comes as response data, I save it localstorage.
 
 If the information is correct, the page redirects to the "/home" endpoint.
+
+
+Method:GET
+URL: localhost/login
+Data: {
+   email:"anilcan@admin.com",
+   password:"123asdA!d"
+}
+OK Response:{
+   status:200,
+   errors:null
+   token:"asdasdasdasdSDFSDFdsfsdf" (sha256),
+}
+FAIL Response:{
+   status:200,
+   errors:[
+      "email":"email should be email format",
+      "passwoed":"password should include uppercase"
+   ]
+   token:"asdasdasdasdSDFSDFdsfsdf" (sha256),
+}
